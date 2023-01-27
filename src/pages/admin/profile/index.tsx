@@ -1,10 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div className='test'>Profile</div>
   );
 }
 
