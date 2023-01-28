@@ -1,6 +1,6 @@
-import { Status } from "../../common/types"
+import { Status } from "common/types";
 
 export type AuthState = {
-    status: Status,
-    loggedIn: boolean
-}
+  status: Status;
+  loggedIn: boolean;
+};
