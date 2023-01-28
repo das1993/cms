@@ -1,9 +1,8 @@
-import React from 'react';
-import './App.css';
+import "App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './pages/login';
-import Dashboard from './pages/admin/dasboard';
-import Profile from './pages/admin/profile';
+import Login from "pages/login";
+import Dashboard from "pages/admin/dasboard";
+import Profile from "pages/admin/profile";
 
 const App = () => {
   return (
@@ -15,6 +14,6 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
