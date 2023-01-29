@@ -1,0 +1,72 @@
+.login {
+  border-radius: $border-radius;
+  width: 30rem;
+  padding: 2rem;
+  overflow: hidden;
+  @include card;
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    font-size: 1rem;
+    color: $black;
+    line-height: 1.5;
+    padding-left: 0.1rem;
+  }
+
+  input {
+    font-size: 1.2rem;
+    color: $black;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    padding: 0 7px 0 43px;
+  }
+
+  &--form-group {
+    border-bottom: 1px solid $black-fade;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  &--border::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 0.01rem;
+    background: $black;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  &--icon {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 55px;
+    left: 13px;
+  }
+
+  &--forgot-password {
+    text-align: right;
+    font-size: 1.2rem;
+  }
+
+  &--form-group:focus-within {
+    .login--icon {
+      fill: $primary-color;
+    }
+
+    .login--border::before {
+      width: 100%;
+    }
+  }
+}
